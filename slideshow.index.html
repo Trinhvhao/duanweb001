@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+         .container{
+           min-height: 100vh;
+           display: flex;
+           justify-content: center;
+           text-align: center;
+           flex-direction: column;
+        }
+        .gallery-display-area{
+            overflow: hidden;
+            width: 1080px;
+            height: 820px;
+            margin:0 auto;
+        }
+        .gallery-wrap{
+            width: 500%;
+            
+            animation: slideshow 16s infinite;
+        }
+        .image{
+               float:left;
+               height: 820px;
+               width: 1080px;
+               display:flex;
+               justify-content: center;
+               align-items: center; 
+               /* -webkit-box-reflect:below 1px 
+               -webkit-gradient(linear, right top , right bottom form(transparent, to (rgba(255,255,255,0.3))))
+        } */
+    }
+        @keyframes slideshow {
+            20%{
+                margin-left:0%;
+            }
+            30%{
+                margin-left:-100%;
+            }
+            40%{
+                margin-left:-100%;
+            }
+            50%{
+                margin-left:-200%;
+            }
+            60%{
+                margin-left:-200%;
+            }
+            70%{
+                margin-left:-300%;
+            }
+            80%{
+                margin-left:-300%;
+            }
+
+            90%{
+                margin-left:-400%;
+            }
+
+            100%{
+                margin-left:-400%;
+            }
+
+
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class ="gallery-display-area">
+        <div class="gallery-wrap">
+        
+          
+        <div class="image">
+            <img width="1080" height="820" src="C:\Users\Admin\OneDrive\Tài liệu\LibraryCode\HTML_Document\DuanWeb001\assets\img\ba4993108388437.5fbcd121e9065.jpg" alt="">
+        </div>
+        <div class="image">
+            <img width="1080" height="820" src="C:\Users\Admin\OneDrive\Tài liệu\LibraryCode\HTML_Document\DuanWeb001\assets\img\Interior-Design-Eames-Office-Globe-GB_EAMES_RANGE1_8—©-Dan-Preston-2023-Courtesy-of-Globe.jpg" alt="">
+        </div>
+        <div class="image">
+            <img width="1080" height="820" src="C:\Users\Admin\OneDrive\Tài liệu\LibraryCode\HTML_Document\DuanWeb001\assets\img\Interior-Design-YOD-Group-Terra-Ukraine-idx230101_boy_Hotel_Dining01.jpg" alt="">
+        </div>
+        <div class="image">
+            <img width="1080" height="820" src="C:\Users\Admin\OneDrive\Tài liệu\LibraryCode\HTML_Document\DuanWeb001\assets\img\luxury-high-end-minimal-masculine-interior-design-3+copy.jpg" alt="">
+        </div>
+        <div class="image">
+            <img width="1080" height="820" src="C:\Users\Admin\OneDrive\Tài liệu\LibraryCode\HTML_Document\DuanWeb001\assets\img\Interior-Design-Eames-Office-Globe-GB_EAMES_RANGE1_8—©-Dan-Preston-2023-Courtesy-of-Globe.jpg" alt="">
+        </div>
+
+        </div>
+    </div>
+    </div>
+    
+</body>
+</html>
